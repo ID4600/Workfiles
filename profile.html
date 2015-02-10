@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Chain Responsive Bootstrap3 Admin</title>
+
+        <link href="css/style.default.css" rel="stylesheet">
+        <link href="css/prettyPhoto.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+        <script src="js/html5shiv.js"></script>
+        <script src="js/respond.min.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+        
+        <header>
+            <div class="headerwrapper">
+                <div class="header-left">
+                    <a href="index.html" class="logo">
+                        <img src="images/logo.png" alt="" /> 
+                    </a>
+                    <div class="pull-right">
+                        <a href="" class="menu-collapse">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                    </div>
+                </div><!-- header-left -->
+                
+                <div class="header-right">
+                    
+                    <div class="pull-right">
+                        
+                        <form class="form form-search" action="search-results.html">
+                            <input type="search" class="form-control" placeholder="Zoeken" />
+                        </form>
+                        
+                        <div class="btn-group btn-group-list btn-group-notification">
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                              <i class="fa fa-bell-o"></i>
+                              <span class="badge">3</span>
+                            </button>
+                            <div class="dropdown-menu pull-right">
+                                <a href="" class="link-right"><i class="fa fa-search"></i></a>
+                                <h5>Updates</h5>
+                                <ul class="media-list dropdown-list">
+                                    <li class="media">
+                                        <img class="img-circle pull-left noti-thumb" src="images/photos/user1.png" alt="">
+                                        <div class="media-body">
+                                          <strong>Daan de Ruijter</strong> Heeft zich aangemeld voor LegoWorld
+                                          <small class="date"><i class="fa fa-thumbs-up"></i> 15 minuten geleden</small>
+                                        </div>
+                                    </li>
+                                    <li class="media">
+                                        <img class="img-circle pull-left noti-thumb" src="images/photos/user2.png" alt="">
+                                        <div class="media-body">
+                                          <strong>Leon de Graaff</strong> heeft foto's geupload van <strong>Verzameljaarbeurs</strong>.
+                                          <small class="date"><i class="fa fa-calendar"></i> 4 juli, 2014</small>
+                                        </div>
+                                    </li>
+                                    <li class="media">
+                                        <img class="img-circle pull-left noti-thumb" src="images/photos/user4.png" alt="">
+                                        <div class="media-body">
+                                          <strong>Martin de Wit</strong> heeft zich aangemeld voor <strong>Space to Be</strong>.
+                                          <small class="date"><i class="fa fa-thumbs-up"></i> 3 juli, 2014</small>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="dropdown-footer text-center">
+                                    <a href="" class="link">Bekijk alle updates</a>
+                                </div>
+                            </div><!-- dropdown-menu -->
+                        </div><!-- btn-group -->
+                        
+                        <div class="btn-group btn-group-list btn-group-messages">
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                <i class="fa fa-envelope-o"></i>
+                                <span class="badge">1</span>
+                            </button>
+                            <div class="dropdown-menu pull-right">
+                                <a href="" class="link-right"><i class="fa fa-plus"></i></a>
+                                <h5>Nieuwe berichten</h5>
+                                <ul class="media-list dropdown-list">
+                                    <li class="media">
+                                        <img class="img-circle pull-left noti-thumb" src="images/photos/user3.png" alt="">
+                                        <div class="media-body">
+                                          <strong>Rick Fleuren</strong>
+                                          <p>We gaan legoworld...</p>
+                                          <small class="date"><i class="fa fa-clock-o"></i> 2 Juli, 2014</small>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="dropdown-footer text-center">
+                                    <a href="" class="link">Bekijk alle berichten</a>
+                                </div>
+                            </div><!-- dropdown-menu -->
+                        </div><!-- btn-group -->
+                        
+                        <div class="btn-group btn-group-option">
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                              <i class="fa fa-caret-down"></i>
+                            </button>
+                            <ul class="dropdown-menu pull-right" role="menu">
+                              <li><a href="#"><i class="glyphicon glyphicon-user"></i> Mijn profiel</a></li>
+                              <li><a href="#"><i class="glyphicon glyphicon-star"></i> Mijn activiteiten</a></li>
+                              <li><a href="#"><i class="glyphicon glyphicon-cog"></i> Account Settings</a></li>
+                              <li><a href="#"><i class="glyphicon glyphicon-question-sign"></i> Help</a></li>
+                              <li class="divider"></li>
+                              <li><a href="signin.html"><i class="glyphicon glyphicon-log-out"></i>Log uit</a></li>
+                            </ul>
+                        </div><!-- btn-group -->
+                        
+                    </div><!-- pull-right -->
+                    
+                </div><!-- header-right -->
+                
+            </div><!-- headerwrapper -->
+        </header>
+        
+        <section>
+            <div class="mainwrapper">
+                <div class="leftpanel">
+                    <div class="media profile-left">
+                        <a class="pull-left profile-thumb" href="profile.html">
+                            <img class="img-circle" src="images/photos/profile.png" alt="">
+                        </a>
+                        <div class="media-body">
+                            <h4 class="media-heading">Leon de Graaff</h4>
+                            <small class="text-muted">TKID: 4600</small>
+                        </div>
+                    </div><!-- media -->
+                    
+                    <h5 class="leftpanel-title">Navigation</h5>
+                    <ul class="nav nav-pills nav-stacked">
+                        <li class="active"><a href="index.html"><i class="fa fa-empire"></i> <span>Dashboard</span></a></li>
+                        <li><a href="messages.html"><span class="pull-right badge">1</span><i class="fa fa-envelope-o"></i> <span>Messages</span></a></li>
+                        <li class="parent"><a href=""><i class="fa fa-calendar"></i> <span>Events</span></a>
+                            <ul class="children">
+                                <li><a href="#">Mijn events</a></li>
+                                <li><a href="#">Aanmelden</a></li>
+                                <li><a href="#">Beheren</a></li>
+                                <li><a href="new_event.html">Nieuw</a></li>
+                                <li><a href="#">Archief</a></li>
+                            </ul>
+                        </li>
+                        <li class="parent"><a href=""><i class="fa fa-gift"></i> <span>Merchandise</span></a>
+                            <ul class="children">
+                                <li><a href="#">Mijn Merchandise</a></li>
+                                <li><a href="#">Kopen</a></li>
+                                <li><a href="#">Beheren</a></li>
+                                <li><a href="#">Nieuw</a></li>
+                                <li><a href="#">Archief</a></li>
+                            </ul>
+                        </li>
+                        <li class="parent"><a href=""><i class="fa fa-desktop"></i> <span>Website</span></a>
+                            <ul class="children">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Events</a></li>
+                                <li><a href="#">Media</a></li>
+                                <li><a href="#">Charity</a></li>
+                                <li><a href="#">Leden</a></li>
+                                <li><a href="#">Info</a></li>
+                                <li><a href="#">Word Lid</a></li>
+                                <li><a href="#">Contact</a></li>
+                                
+                            </ul>
+                        </li>
+                        <li class="parent"><a href=""><i class="fa fa-cog"></i> <span>Opties</span></a>
+                        	<ul class="children">
+                                <li><a href="profile.html">Mijn profiel</a></li>
+                                <li><a href="#">Gebruikers</a></li>
+                                <li><a href="#">Gebruiker toevoegen</a></li>
+                            </ul>
+                         </li>
+                     </ul>
+                    
+                </div><!-- leftpanel -->
+                
+                <div class="mainpanel">
+                    <div class="pageheader">
+                        <div class="media">
+                            <div class="pageicon pull-left">
+                                <i class="fa fa-user"></i>
+                            </div>
+                            <div class="media-body">
+                                <ul class="breadcrumb">
+                                    <li><a href="index.html"><i class="glyphicon glyphicon-home"></i></a></li>
+                                    <li><a href="">Opties</a></li>
+                                    <li>Profiel pagina</li>
+                                </ul>
+                                <h4>Profiel pagina</h4>
+                            </div>
+                        </div><!-- media -->
+                    </div><!-- pageheader -->
+                    
+                    <div class="contentpanel">
+                        
+                        <div class="row">
+                            <div class="col-sm-4 col-md-3">
+                                <div class="text-center">
+                                    <img src="images/photos/profile-big.jpg" class="img-online img-responsive img-profile" alt="" />
+                                    <h4 class="profile-name mb5">Leon de Graaff</h4>
+                                    <div><i class="fa fa-map-marker"></i> Aalsmeerderbrug, Noord-Holland, NL</div>
+                                    <div><i class="fa fa-empire"></i> SL, ID</div>
+                                
+                                    <div class="mb20"></div>
+                                
+                                    <div class="btn-group">
+                                        <button class="btn btn-primary btn-bordered">Volgt</button>
+                                        <button class="btn btn-primary btn-bordered">Volgers</button>
+                                    </div>
+                                </div><!-- text-center -->
+                                
+                                <br />
+                              
+                                <h5 class="md-title">About</h5>
+                                <p class="mb30">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitat... <a href="">Show More</a></p>
+                              
+                                <h5 class="md-title">Connect</h5>
+                                <ul class="list-unstyled social-list">
+                                    <li><i class="fa fa-twitter"></i> <a href="https://twitter.com/Leon_de_Graaff">twitter.com/Leon_de_Graaff</a></li>
+                                    <li><i class="fa fa-facebook"></i> <a href="http://facebook.com/leon.degraaff">facebook.com/leon.degraaff</a></li>
+                                    <li><i class="fa fa-youtube"></i> <a href="https://www.youtube.com/channel/UCsDnLeqEdd7LpAnFq8V3CTw/videos">youtube.com/LeondeGraaff</a></li>
+                                </ul>
+                              
+                                <div class="mb30"></div>
+                              
+                                <h5 class="md-title">Adres</h5>
+                                <address>
+                                    Aalsmeerderdijk 418<br>
+                                    Aalsmeerderbrug, 1436BK<br>
+                                    <abbr title="Phone">P:</abbr> (0297) 343095
+                                </address>
+                              
+                            </div><!-- col-sm-4 col-md-3 -->
+                            
+                            <div class="col-sm-8 col-md-9">
+                              
+                                <!-- Nav tabs -->
+                                <ul class="nav nav-tabs nav-line">
+                                    <li class="active"><a href="#activities" data-toggle="tab"><strong>Activiteiten</strong></a></li>
+                                    <li><a href="#followers" data-toggle="tab"><strong>Followers</strong></a></li>
+                                    <li><a href="#following" data-toggle="tab"><strong>Following</strong></a></li>
+                                    <li><a href="#events" data-toggle="tab"><strong>My Events</strong></a></li>
+                                </ul>
+                            
+                                <!-- Tab panes -->
+                                <div class="tab-content nopadding noborder">
+                                    <div class="tab-pane active" id="activities">
+                                        <div class="activity-list">  
+                                            <div class="media">
+                                                <a class="pull-left" href="#">
+                                                    <img class="media-object" src="images/photos/user1.png" alt="" />
+                                                </a>
+                                                <div class="media-body">
+                                                    <strong>Daan de Ruijter</strong> volgt nu <strong>Rick Fleuren</strong>. <br />
+                                                    <small class="text-muted">Yesterday at 3:30pm</small>
+                                                </div>
+                                            </div><!-- media -->
+                                  
+                                            <div class="media">
+                                                <a class="pull-left" href="#">
+                                                    <img class="media-object img-circle" src="images/photos/profile.png" alt="" />
+                                                </a>
+                                                <div class="media-body">
+                                                    <strong>Leon de Graaff</strong> heeft een nieuwe Gallery gemaakt. <br />
+                                                    <small class="text-muted">Today at 3:18pm</small>
+                                                  
+                                                    <div class="media blog-media">
+                                                        <a class="pull-left" href="#">
+                                                            <img class="media-object thumbnail" src="images/photos/media5.png" alt="" />
+                                                        </a>
+                                                        <div class="media-body">
+                                                            <h4 class="media-title"><a href="">Ut Enim Ad Minim Veniam</a></h4>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat... <a href="">Read more</a></p>
+                                                        </div>
+                                                      </div><!-- media -->      
+                                                </div><!-- media-body -->
+                                            </div><!-- media -->
+                                  
+                                            <div class="media">
+                                                <a class="pull-left" href="#">
+                                                    <img class="media-object" src="images/photos/user2.png" alt="" />
+                                                </a>
+                                                <div class="media-body">
+                                                    <strong>Puck Barendregt</strong> volgt nu <strong>Daan de Ruijter</strong>. <br />
+                                                    <small class="text-muted">2 days ago at 8:30am</small>
+                                                </div>
+                                            </div><!-- media -->
+                                  
+                                            <div class="media">
+                                                <a class="pull-left" href="#">
+                                                    <img class="media-object img-circle" src="images/photos/user1.png" alt="" />
+                                                </a>
+                                                <div class="media-body">
+                                                    <strong>Daan de Ruijter</strong> heeft zich aangemeld voor <strong>Space to Be - Noordwijk</strong>. <br />
+                                                    <small class="text-muted">6 days ago at 8:15am</small>
+                                                </div>
+                                            </div><!-- media -->
+                                  
+                                            <div class="media">
+                                                <a class="pull-left" href="#">
+                                                    <img class="media-object img-circle" src="images/photos/profile.png" alt="" />
+                                                </a>
+                                                <div class="media-body">
+                                                    <strong>Elen Adarna</strong> posted a new note. <br />
+                                                    <small class="text-muted">6 days ago at 6:18am</small>
+                                                    <h4 class="media-title"><a href="">Consectetur Adipisicing Elit</a></h4>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat... <a href="">Read more</a></p>
+                                                </div>
+                                            </div><!-- media -->
+                                  
+                                            <div class="media">
+                                                <a class="pull-left" href="#">
+                                                    <img class="media-object img-circle" src="images/photos/profile.png" alt="" />
+                                                </a>
+                                                <div class="media-body">
+                                                    <strong>Elen Adarna</strong> posted a new blog. <br />
+                                                    <small class="text-muted">December 25 at 3:18pm</small>
+                                          
+                                                    <div class="media blog-media">
+                                                        <a class="pull-left" href="#">
+                                                            <img class="media-object thumbnail" src="images/photos/media4.png" alt="" />
+                                                        </a>
+                                                        <div class="media-body">
+                                                            <h4 class="media-title"><a href="">Ut Enim Ad Minim Veniam</a></h4>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat... <a href="">Read more</a></p>
+                                                        </div>
+                                                    </div><!-- media -->
+                                                </div>
+                                            </div><!-- media -->
+                                  
+                                            <div class="media">
+                                                <a class="pull-left" href="#">
+                                                    <img class="media-object img-circle" src="images/photos/profile.png" alt="" />
+                                                </a>
+                                                <div class="media-body">
+                                                    <strong>Elen Adarna</strong> added new photo. <br />
+                                                    <small class="text-muted">December 24 at 1:30pm</small>
+                                                    <div class="mb20"></div>
+                                                    <a href="images/photos/media6.png" data-rel="prettyPhoto" class="img-single"><img src="images/photos/media6.png" class="thumbnail img-responsive" alt="" /></a>
+                                                </div>
+                                            </div><!-- media -->
+                                  
+                                            <div class="media">
+                                                <a class="pull-left" href="#">
+                                                    <img class="media-object img-circle" src="images/photos/user5.png" alt="" />
+                                                </a>
+                                                <div class="media-body">
+                                                    <strong>Weno Carasbong</strong> started following <strong>Elen Adarna</strong>. <br />
+                                                    <small class="text-muted">December 15 at 3:30pm</small>
+                                                </div>
+                                            </div><!-- media -->
+                                  
+                                            <div class="media">
+                                                <a class="pull-left" href="#">
+                                                    <img class="media-object img-circle" src="images/photos/profile.png" alt="" />
+                                                </a>
+                                                <div class="media-body">
+                                                    <strong>Elen Adarna</strong> posted a new blog. <br />
+                                                    <small class="text-muted">December 15 at 3:18pm</small>
+                                          
+                                                    <div class="media blog-media">
+                                                        <a class="pull-left" href="#">
+                                                            <img class="media-object thumbnail" src="images/photos/media7.png" alt="" />
+                                                        </a>
+                                                        <div class="media-body">
+                                                            <h4 class="media-title"><a href="">Ut Enim Ad Minim Veniam</a></h4>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat... <a href="">Read more</a></p>
+                                                        </div>
+                                                    </div><!-- media -->
+                                                </div>
+                                            </div><!-- media -->  
+                                        </div><!-- activity-list -->
+                                
+                                        <button class="btn btn-white btn-block">Show More</button>
+                                    </div><!-- tab-pane -->
+                                    
+                                    <div class="tab-pane" id="followers">
+                                
+                                        <div class="follower-list">
+                                            <div class="media">
+                                                <a class="pull-left" href="#">
+                                                    <img class="media-object img-circle" src="holder.js/100x100" alt="" />
+                                                </a>
+                                                <div class="media-body">
+                                                    <h3 class="follower-name">Ray Sin</h3>
+                                                    <div><i class="fa fa-map-marker"></i> San Francisco, California, USA</div>
+                                                    <div><i class="fa fa-briefcase"></i> Software Engineer at <a href="">SomeCompany, Inc.</a></div>
+                                      
+                                                    <div class="mb20"></div>
+                                      
+                                                    <div class="btn-toolbar">
+                                                        <div class="btn-group">
+                                                            <button class="btn btn-dark btn-xs"><i class="fa fa-envelope-o"></i> Send Message</button>
+                                                        </div><!-- btn-group -->
+                                                        <div class="btn-group">
+                                                            <button class="btn btn-white btn-xs"><i class="fa fa-check"></i> Following</button>
+                                                            <button class="btn btn-white btn-xs"><i class="fa fa-check"></i> Followers</button>
+                                                        </div><!-- btn-group -->
+                                                        
+                                                    </div><!-- btn-toolbar -->
+                                                </div><!-- media-body -->
+                                            </div><!-- media -->
+                                            
+                                            <div class="media">
+                                                <a class="pull-left" href="#">
+                                                    <img class="media-object img-circle" src="holder.js/100x100" alt="" />
+                                                </a>
+                                                <div class="media-body">
+                                                    <h3 class="follower-name">Weno Carasbong</h3>
+                                                    <div><i class="fa fa-map-marker"></i> Cebu City, Philippines</div>
+                                                    <div><i class="fa fa-briefcase"></i> Software Engineer at <a href="">ITCompany, Inc.</a></div>
+                                      
+                                                    <div class="mb20"></div>
+                                      
+                                                    <div class="btn-toolbar">
+                                                        <div class="btn-group">
+                                                            <button class="btn btn-dark btn-xs"><i class="fa fa-envelope-o"></i> Send Message</button>
+                                                        </div><!-- btn-group -->
+                                                        <div class="btn-group">
+                                                            <button class="btn btn-white btn-xs"><i class="fa fa-check"></i> Following</button>
+                                                            <button class="btn btn-white btn-xs"><i class="fa fa-check"></i> Followers</button>
+                                                        </div><!-- btn-group -->
+                                                    </div><!-- btn-toolbar -->
+                                                </div><!-- media-body -->
+                                            </div><!-- media -->
+                                  
+                                            <div class="media">
+                                                <a class="pull-left" href="#">
+                                                    <img class="media-object img-circle" src="holder.js/100x100" alt="" />
+                                                </a>
+                                                <div class="media-body">
+                                                    <h3 class="follower-name">Nusja Nawancali</h3>
+                                                    <div class="profile-location"><i class="fa fa-map-marker"></i> Madrid, Spain</div>
+                                                    <div class="profile-position"><i class="fa fa-briefcase"></i> CEO at <a href="">SomeCompany, Inc.</a></div>
+                                      
+                                                    <div class="mb20"></div>
+                                      
+                                                    <div class="btn-toolbar">
+                                                        <div class="btn-group">
+                                                            <button class="btn btn-dark btn-xs"><i class="fa fa-envelope-o"></i> Send Message</button>
+                                                        </div><!-- btn-group -->
+                                                        <div class="btn-group">
+                                                            <button class="btn btn-white btn-xs"><i class="fa fa-check"></i> Following</button>
+                                                            <button class="btn btn-white btn-xs"><i class="fa fa-check"></i> Followers</button>
+                                                        </div><!-- btn-group -->
+                                                    </div><!-- btn-toolbar -->
+                                                </div><!-- media-body -->
+                                            </div><!-- media -->
+                                  
+                                            <div class="media">
+                                                <a class="pull-left" href="#">
+                                                    <img class="media-object img-circle" src="holder.js/100x100" alt="" />
+                                                </a>
+                                                <div class="media-body">
+                                                    <h3 class="follower-name">Zaham Sindilmaca</h3>
+                                                    <div><i class="fa fa-map-marker"></i> Bangkok, Thailand</div>
+                                                    <div><i class="fa fa-briefcase"></i> Java Developer at <a href="">ITCompany, Inc.</a></div>
+                                      
+                                                    <div class="mb20"></div>
+                                      
+                                                    <div class="btn-toolbar">
+                                                        <div class="btn-group">
+                                                            <button class="btn btn-dark btn-xs"><i class="fa fa-envelope-o"></i> Send Message</button>
+                                                        </div><!-- btn-group -->
+                                                        <div class="btn-group">
+                                                            <button class="btn btn-white btn-xs"><i class="fa fa-check"></i> Following</button>
+                                                            <button class="btn btn-white btn-xs"><i class="fa fa-check"></i> Followers</button>
+                                                        </div><!-- btn-group -->
+                                                    </div><!-- btn-toolbar -->
+                                                </div><!-- media-body -->
+                                            </div><!-- media -->
+                                  
+                                            <div class="media">
+                                                <a class="pull-left" href="#">
+                                                    <img class="media-object img-circle" src="holder.js/100x100" alt="" />
+                                                </a>
+                                                <div class="media-body">
+                                                    <h3 class="follower-name">Christopher Atam</h3>
+                                                    <div class="profile-location"><i class="fa fa-map-marker"></i> Tokyo, Japan</div>
+                                                    <div class="profile-position"><i class="fa fa-briefcase"></i> QA Engineer at <a href="">SomeCompany, Inc.</a></div>
+                                      
+                                                    <div class="mb20"></div>
+                                      
+                                                    <div class="btn-toolbar">
+                                                        <div class="btn-group">
+                                                            <button class="btn btn-dark btn-xs"><i class="fa fa-envelope-o"></i> Send Message</button>
+                                                        </div><!-- btn-group -->
+                                                        <div class="btn-group">
+                                                            <button class="btn btn-white btn-xs"><i class="fa fa-check"></i> Following</button>
+                                                            <button class="btn btn-white btn-xs"><i class="fa fa-check"></i> Followers</button>
+                                                        </div><!-- btn-group -->
+                                                    </div><!-- btn-toolbar -->
+                                                </div><!-- media-body -->
+                                            </div><!-- media -->
+                                  
+                                            <div class="media">
+                                                <a class="pull-left" href="#">
+                                                    <img class="media-object img-circle" src="holder.js/100x100" alt="" />
+                                                </a>
+                                                <div class="media-body">
+                                                    <h3 class="follower-name">Venro Leonga</h3>
+                                                    <div class="profile-location"><i class="fa fa-map-marker"></i> Paris, France</div>
+                                                    <div class="profile-position"><i class="fa fa-briefcase"></i> UX Designer at <a href="">ITCompany, Inc.</a></div>
+                                      
+                                                    <div class="mb20"></div>
+                                      
+                                                    <div class="btn-toolbar">
+                                                        <div class="btn-group">
+                                                            <button class="btn btn-dark btn-xs"><i class="fa fa-envelope-o"></i> Send Message</button>
+                                                        </div><!-- btn-group -->
+                                                        <div class="btn-group">
+                                                            <button class="btn btn-white btn-xs"><i class="fa fa-check"></i> Following</button>
+                                                            <button class="btn btn-white btn-xs"><i class="fa fa-check"></i> Followers</button>
+                                                        </div><!-- btn-group -->
+                                                    </div><!-- btn-toolbar -->
+                                                </div><!-- media-body -->
+                                            </div><!-- media -->  
+                                        </div><!--follower-list -->
+                                    </div><!-- tab-pane -->
+                                    
+                                    <div class="tab-pane" id="following">
+                                
+                                        <div class="activity-list">
+                                            <div class="media">
+                                                <a class="pull-left" href="#">
+                                                    <img class="media-object img-circle" src="images/photos/user2.png" alt="" />
+                                                </a>
+                                            <div class="media-body">
+                                                <strong>Chris Anthemum</strong> liked a photos<br />
+                                                <small class="text-muted">Today at 12:30pm</small>
+                                      
+                                                <ul class="uploadphoto-list">
+                                                    <li><a href="images/photos/media5.png" data-rel="prettyPhoto"><img src="images/photos/media5.png" class="thumbnail img-responsive" alt="" /></a></li>
+                                                    <li><a href="images/photos/media4.png" data-rel="prettyPhoto"><img src="images/photos/media4.png" class="thumbnail img-responsive" alt="" /></a></li>
+                                                </ul>
+                                            </div>
+                                        </div><!-- media -->
+                                  
+                                        <div class="media">
+                                            <a class="pull-left" href="#">
+                                                <img class="media-object img-circle" src="images/photos/user1.png" alt="" />
+                                            </a>
+                                            <div class="media-body">
+                                                <strong>Ray Sin</strong> is now following to <strong>Chris Anthemum</strong>. <br />
+                                                <small class="text-muted">Yesterday at 1:30pm</small>
+                                            </div><!-- media-body -->
+                                        </div><!-- media -->
+                                  
+                                        <div class="media">
+                                            <a class="pull-left" href="#">
+                                                <img class="media-object img-circle" src="images/photos/user4.png" alt="" />
+                                            </a>
+                                            <div class="media-body">
+                                                <strong>Frank Furter</strong> is now following to <strong>Ray Sin</strong>. <br />
+                                                <small class="text-muted">3 days ago at 1:30pm</small>
+                                            </div>
+                                        </div><!-- media -->
+                                  
+                                        <div class="media">
+                                            <a class="pull-left" href="#">
+                                                <img class="media-object img-circle" src="images/photos/user2.png" alt="" />
+                                            </a>
+                                            <div class="media-body">
+                                                <strong>Chris Anthemum</strong> liked a photos<br />
+                                                <small class="text-muted">5 days ago at 12:30pm</small>
+                                      
+                                                <ul class="uploadphoto-list">
+                                                    <li><a href="images/photos/media6.png" data-rel="prettyPhoto"><img src="images/photos/media6.png" class="thumbnail img-responsive" alt="" /></a></li>
+                                                    <li><a href="images/photos/media7.png" data-rel="prettyPhoto"><img src="images/photos/media7.png" class="thumbnail img-responsive" alt="" /></a></li>
+                                                    <li><a href="images/photos/media2.png" data-rel="prettyPhoto"><img src="images/photos/media2.png" class="thumbnail img-responsive" alt="" /></a></li>
+                                                </ul>
+                                            </div><!-- media-body -->
+                                        </div><!-- media -->
+                                  
+                                        <div class="media">
+                                            <a class="pull-left" href="#">
+                                                <img class="media-object img-circle" src="images/photos/user1.png" alt="" />
+                                            </a>
+                                            <div class="media-body">
+                                                <strong>Nusja Nawancali</strong> is now following to <strong>Zaham Sindilmaca</strong>. <br />
+                                                <small class="text-muted">December 25 at 1:30pm</small>
+                                            </div><!-- media-body -->
+                                        </div><!-- media -->
+                                  
+                                        <div class="media">
+                                            <a class="pull-left" href="#">
+                                                <img class="media-object img-circle" src="images/photos/user4.png" alt="" />
+                                            </a>
+                                            <div class="media-body">
+                                                <strong>Frank Furter</strong> is now following to <strong>Zaham Sindilmaca</strong>. <br />
+                                                <small class="text-muted">December 24 at 1:30pm</small>
+                                            </div><!-- media-body -->
+                                        </div><!-- media -->
+                                  
+                                        <div class="media">
+                                            <a class="pull-left" href="#">
+                                                <img class="media-object img-circle" src="images/photos/user3.png" alt="" />
+                                            </a>
+                                            <div class="media-body">
+                                                <strong>Nusja NawanCali</strong> posted a new blog. <br />
+                                                <small class="text-muted">December 23 at 3:18pm</small>
+                                          
+                                                <div class="media blog-media">
+                                                    <a class="pull-left" href="#">
+                                                        <img class="media-object" src="images/photos/media3.png" alt="" />
+                                                    </a>
+                                                    <div class="media-body">
+                                                        <h4 class="media-title"><a href="">Ut Enim Ad Minim Veniam</a></h4>
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat... <a href="">Read more</a></p>
+                                                    </div><!-- media-body -->
+                                                </div><!-- media -->
+                                            </div><!-- media-body -->
+                                        </div><!-- media -->
+                                  
+                                        <div class="media">
+                                            <a class="pull-left" href="#">
+                                                <img class="media-object img-circle" src="images/photos/user4.png" alt="" />
+                                            </a>
+                                            <div class="media-body">
+                                                <strong>Mark Zonsion</strong> is now following to <strong>Weno Carasbong</strong>. <br />
+                                                <small class="text-muted">December 23 at 1:30pm</small>
+                                            </div><!-- media-body -->
+                                        </div><!-- media -->
+                                  
+                                        <div class="media">
+                                            <a class="pull-left" href="#">
+                                                <img class="media-object img-circle" src="images/photos/user4.png" alt="" />
+                                            </a>
+                                            <div class="media-body">
+                                                <strong>Frank Furter</strong> is now following to <strong>Weno Carasbong</strong>. <br />
+                                                <small class="text-muted">December 20 at 4:30pm</small>
+                                            </div><!-- media-body -->
+                                        </div><!-- media -->
+                                  
+                                    </div><!-- activity-list -->
+                                    <button class="btn btn-white btn-block">Show More</button>
+                                </div><!-- tab-pane -->
+                                
+                                <div class="tab-pane" id="events">
+                                    <div class="events">
+                                        <h5 class="lg-title mb20">Upcoming Events</h5>
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <div class="media">
+                                                    <a class="pull-left" href="#">
+                                                        <img class="media-object thumbnail" src="holder.js/100x120" alt="" />
+                                                    </a>
+                                                    <div class="media-body">
+                                                        <h4 class="event-title"><a href="">Free Living Trust Seminar</a></h4>
+                                                        <small class="text-muted"><i class="fa fa-map-marker"></i> Silicon Valley, San Francisco, CA</small>
+                                                        <small class="text-muted"><i class="fa fa-calendar"></i> Sunday, January 15, 2014 at 11:00am</small>
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor...</p>
+                                                    </div>
+                                                </div><!-- media -->
+                                            </div><!-- col-sm-6 -->
+                                    
+                                            <div class="col-sm-6">
+                                                <div class="media">
+                                                    <a class="pull-left" href="#">
+                                                        <img class="media-object thumbnail" src="holder.js/100x120" alt="" />
+                                                    </a>
+                                                    <div class="media-body">
+                                                        <h4 class="event-title"><a href="">Serious Games Seminar</a></h4>
+                                                        <small class="text-muted"><i class="fa fa-map-marker"></i> New York City</small>
+                                                        <small class="text-muted"><i class="fa fa-calendar"></i> Monday, January 14, 2014 at 8:00am</small>
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor...</p>
+                                                    </div>
+                                                </div><!-- media -->
+                                            </div><!-- col-sm-6 -->
+                                    
+                                            <div class="col-sm-6">
+                                                <div class="media">
+                                                    <a class="pull-left" href="#">
+                                                        <img class="media-object thumbnail" src="holder.js/100x120" alt="" />
+                                                    </a>
+                                                    <div class="media-body">
+                                                        <h4 class="event-title"><a href="">Travel &amp; Adventure Show</a></h4>
+                                                        <small class="text-muted"><i class="fa fa-map-marker"></i> Los Angeles, CA</small>
+                                                        <small class="text-muted"><i class="fa fa-calendar"></i> Friday, January 12, 2014 at 8:00am</small>
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor...</p>
+                                                    </div>
+                                                </div><!-- media -->
+                                            </div><!-- col-sm-6 -->
+                                    
+                                            <div class="col-sm-6">
+                                                <div class="media">
+                                                    <a class="pull-left" href="#">
+                                                        <img class="media-object thumbnail" src="holder.js/100x120" alt="" />
+                                                    </a>
+                                                    <div class="media-body">
+                                                        <h4 class="event-title"><a href="">Mobile Games Summit</a></h4>
+                                                        <small class="text-muted"><i class="fa fa-map-marker"></i> Bay Area, San Francisco</small>
+                                                        <small class="text-muted"><i class="fa fa-calendar"></i> Saturday, January 10, 2014 at 8:00am</small>
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor...</p>
+                                                    </div>
+                                                </div><!-- media -->
+                                            </div><!-- col-sm-6 -->
+                                        </div><!-- row -->
+                                  
+                                        <br />
+                                  
+                                        <h5 class="lg-title mb20">Past Events</h5>
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <div class="media">
+                                                    <a class="pull-left" href="#">
+                                                        <img class="media-object thumbnail" src="holder.js/100x120" alt="" />
+                                                    </a>
+                                                    <div class="media-body">
+                                                        <h4 class="event-title"><a href="">Free Living Trust Seminar</a></h4>
+                                                        <small class="text-muted"><i class="fa fa-map-marker"></i> Silicon Valley, San Francisco, CA</small>
+                                                        <small class="text-muted"><i class="fa fa-calendar"></i> Sunday, January 15, 2014 at 11:00am</small>
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor...</p>
+                                                    </div>
+                                                </div><!-- media -->
+                                            </div><!-- col-sm-6 -->
+                                    
+                                            <div class="col-sm-6">
+                                                <div class="media">
+                                                    <a class="pull-left" href="#">
+                                                        <img class="media-object thumbnail" src="holder.js/100x120" alt="" />
+                                                    </a>
+                                                    <div class="media-body">
+                                                        <h4 class="event-title"><a href="">Serious Games Seminar</a></h4>
+                                                        <small class="text-muted"><i class="fa fa-map-marker"></i> New York City</small>
+                                                        <small class="text-muted"><i class="fa fa-calendar"></i> Monday, January 14, 2014 at 8:00am</small>
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor...</p>
+                                                    </div>
+                                                </div><!-- media -->
+                                            </div><!-- col-sm-6 -->
+                                    
+                                            <div class="col-sm-6">
+                                                <div class="media">
+                                                    <a class="pull-left" href="#">
+                                                        <img class="media-object thumbnail" src="holder.js/100x120" alt="" />
+                                                    </a>
+                                                    <div class="media-body">
+                                                        <h4 class="event-title"><a href="">Travel &amp; Adventure Show</a></h4>
+                                                        <small class="text-muted"><i class="fa fa-map-marker"></i> Los Angeles, CA</small>
+                                                        <small class="text-muted"><i class="fa fa-calendar"></i> Friday, January 12, 2014 at 8:00am</small>
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor...</p>
+                                                    </div>
+                                                </div><!-- media -->
+                                            </div><!-- col-sm-6 -->
+                                    
+                                            <div class="col-sm-6">
+                                                <div class="media">
+                                                    <a class="pull-left" href="#">
+                                                        <img class="media-object thumbnail" src="holder.js/100x120" alt="" />
+                                                    </a>
+                                                    <div class="media-body">
+                                                        <h4 class="event-title"><a href="">Mobile Games Summit</a></h4>
+                                                        <small class="text-muted"><i class="fa fa-map-marker"></i> Bay Area, San Francisco</small>
+                                                        <small class="text-muted"><i class="fa fa-calendar"></i> Saturday, January 10, 2014 at 8:00am</small>
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor...</p>
+                                                    </div>
+                                                </div><!-- media -->
+                                            </div><!-- col-sm-6 -->
+                                        </div><!-- row -->
+                                    </div><!-- events -->
+                                </div><!-- tab-pane -->
+                                
+                            </div><!-- tab-content -->
+                              
+                            </div><!-- col-sm-9 -->
+                        </div><!-- row -->  
+                    
+                    </div><!-- contentpanel -->
+                    
+                </div>
+            </div><!-- mainwrapper -->
+        </section>
+
+
+        <script src="js/jquery-1.11.1.min.js"></script>
+        <script src="js/jquery-migrate-1.2.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/modernizr.min.js"></script>
+        <script src="js/pace.min.js"></script>
+        <script src="js/retina.min.js"></script>
+        <script src="js/jquery.cookies.js"></script>
+        
+        <script src="js/jquery.prettyPhoto.js"></script>
+        <script src="js/holder.js"></script>
+
+        <script src="js/custom.js"></script>
+        <script>
+            jQuery(document).ready(function(){
+              
+              jQuery("a[data-rel^='prettyPhoto']").prettyPhoto();
+              
+            });
+        </script>
+
+    </body>
+</html>

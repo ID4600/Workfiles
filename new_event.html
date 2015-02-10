@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>I.R.I.S | Dutch Garrison</title>
+
+        <link href="css/style.default.css" rel="stylesheet">
+        <link href="css/jquery.tagsinput.css" rel="stylesheet" />
+        <link href="css/toggles.css" rel="stylesheet" />
+        <link href="css/bootstrap-timepicker.min.css" rel="stylesheet" />
+        <link href="css/select2.css" rel="stylesheet" />
+		<link href="css/bootstrap-wysihtml5.css" rel="stylesheet" />
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+        <script src="js/html5shiv.js"></script>
+        <script src="js/respond.min.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+        
+        <header>
+            <div class="headerwrapper">
+                <div class="header-left">
+                    <a href="index.html" class="logo">
+                        <img src="images/logo.png" alt="" /> 
+                    </a>
+                    <div class="pull-right">
+                        <a href="" class="menu-collapse">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                    </div>
+                </div><!-- header-left -->
+                
+                <div class="header-right">
+                    
+                    <div class="pull-right">
+                        
+                        <form class="form form-search" action="search-results.html">
+                            <input type="search" class="form-control" placeholder="Zoeken" />
+                        </form>
+                        
+                        <div class="btn-group btn-group-list btn-group-notification">
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                              <i class="fa fa-bell-o"></i>
+                              <span class="badge">3</span>
+                            </button>
+                            <div class="dropdown-menu pull-right">
+                                <a href="" class="link-right"><i class="fa fa-search"></i></a>
+                                <h5>Updates</h5>
+                                <ul class="media-list dropdown-list">
+                                    <li class="media">
+                                        <img class="img-circle pull-left noti-thumb" src="images/photos/user1.png" alt="">
+                                        <div class="media-body">
+                                          <strong>Daan de Ruijter</strong> Heeft zich aangemeld voor LegoWorld
+                                          <small class="date"><i class="fa fa-thumbs-up"></i> 15 minuten geleden</small>
+                                        </div>
+                                    </li>
+                                    <li class="media">
+                                        <img class="img-circle pull-left noti-thumb" src="images/photos/user2.png" alt="">
+                                        <div class="media-body">
+                                          <strong>Leon de Graaff</strong> heeft foto's geupload van <strong>Verzameljaarbeurs</strong>.
+                                          <small class="date"><i class="fa fa-calendar"></i> 4 juli, 2014</small>
+                                        </div>
+                                    </li>
+                                    <li class="media">
+                                        <img class="img-circle pull-left noti-thumb" src="images/photos/user4.png" alt="">
+                                        <div class="media-body">
+                                          <strong>Martin de Wit</strong> heeft zich aangemeld voor <strong>Space to Be</strong>.
+                                          <small class="date"><i class="fa fa-thumbs-up"></i> 3 juli, 2014</small>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="dropdown-footer text-center">
+                                    <a href="" class="link">Bekijk alle updates</a>
+                                </div>
+                            </div><!-- dropdown-menu -->
+                        </div><!-- btn-group -->
+                        
+                        <div class="btn-group btn-group-list btn-group-messages">
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                <i class="fa fa-envelope-o"></i>
+                                <span class="badge">1</span>
+                            </button>
+                            <div class="dropdown-menu pull-right">
+                                <a href="" class="link-right"><i class="fa fa-plus"></i></a>
+                                <h5>Nieuwe berichten</h5>
+                                <ul class="media-list dropdown-list">
+                                    <li class="media">
+                                        <img class="img-circle pull-left noti-thumb" src="images/photos/user3.png" alt="">
+                                        <div class="media-body">
+                                          <strong>Rick Fleuren</strong>
+                                          <p>We gaan legoworld...</p>
+                                          <small class="date"><i class="fa fa-clock-o"></i> 2 Juli, 2014</small>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="dropdown-footer text-center">
+                                    <a href="" class="link">Bekijk alle berichten</a>
+                                </div>
+                            </div><!-- dropdown-menu -->
+                        </div><!-- btn-group -->
+                        
+                        <div class="btn-group btn-group-option">
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                              <i class="fa fa-caret-down"></i>
+                            </button>
+                            <ul class="dropdown-menu pull-right" role="menu">
+                              <li><a href="#"><i class="glyphicon glyphicon-user"></i> Mijn profiel</a></li>
+                              <li><a href="#"><i class="glyphicon glyphicon-star"></i> Mijn activiteiten</a></li>
+                              <li><a href="#"><i class="glyphicon glyphicon-cog"></i> Account Settings</a></li>
+                              <li><a href="#"><i class="glyphicon glyphicon-question-sign"></i> Help</a></li>
+                              <li class="divider"></li>
+                              <li><a href="signin.html"><i class="glyphicon glyphicon-log-out"></i>Log uit</a></li>
+                            </ul>
+                        </div><!-- btn-group -->
+                        
+                    </div><!-- pull-right -->
+                    
+                </div><!-- header-right -->
+                
+            </div><!-- headerwrapper -->
+        </header>
+        </header>
+        
+        <section>
+            <div class="mainwrapper">
+                <div class="leftpanel">
+                    <div class="media profile-left">
+                        <a class="pull-left profile-thumb" href="profile.html">
+                            <img class="img-circle" src="images/photos/profile.png" alt="">
+                        </a>
+                        <div class="media-body">
+                            <h4 class="media-heading">Leon de Graaff</h4>
+                            <small class="text-muted">TKID: 4600</small>
+                        </div>
+                    </div><!-- media -->
+                    
+                    <h5 class="leftpanel-title">Navigation</h5>
+                    <ul class="nav nav-pills nav-stacked">
+                        <li><a href="index.html"><i class="fa fa-empire"></i> <span>Dashboard</span></a></li>
+                        <li><a href="messages.html"><span class="pull-right badge">1</span><i class="fa fa-envelope-o"></i> <span>Messages</span></a></li>
+                        <li class="parent active"><a href=""><i class="fa fa-calendar"></i> <span>Events</span></a>
+                            <ul class="children">
+                                <li><a href="mijn_events.html">Mijn events</a></li>
+                                <li><a href="event_lijst.html">Events</a></li>
+                                <li><a href="#">Beheren</a></li>
+                                <li class="active"><a href="new_event.html">Nieuw</a></li>
+                                <li><a href="#">Archief</a></li>
+                            </ul>
+                        </li>
+                        <li class="parent"><a href=""><i class="fa fa-gift"></i> <span>Merchandise</span></a>
+                            <ul class="children">
+                                <li><a href="#">Mijn Merchandise</a></li>
+                                <li><a href="#">Kopen</a></li>
+                                <li><a href="#">Beheren</a></li>
+                                <li><a href="#">Nieuw</a></li>
+                                <li><a href="#">Archief</a></li>
+                            </ul>
+                        </li>
+                        <li class="parent"><a href=""><i class="fa fa-desktop"></i> <span>Website</span></a>
+                            <ul class="children">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Events</a></li>
+                                <li><a href="#">Media</a></li>
+                                <li><a href="#">Charity</a></li>
+                                <li><a href="#">Leden</a></li>
+                                <li><a href="#">Info</a></li>
+                                <li><a href="#">Word Lid</a></li>
+                                <li><a href="#">Contact</a></li>
+                                
+                            </ul>
+                        </li>
+                        <li class="parent"><a href=""><i class="fa fa-cog"></i> <span>Opties</span></a>
+                        	<ul class="children">
+                                <li><a href="profile.html">Mijn profiel</a></li>
+                                <li><a href="#">Gebruikers</a></li>
+                                <li><a href="#">Gebruiker toevoegen</a></li>
+                            </ul>
+                         </li>
+                     </ul>
+                    
+                </div><!-- leftpanel -->
+                
+                <div class="mainpanel">
+                    <div class="pageheader">
+                        <div class="media">
+                            <div class="pageicon pull-left">
+                                <i class="fa fa-pencil"></i>
+                            </div>
+                            <div class="media-body">
+                                <ul class="breadcrumb">
+                                    <li><a href=""><i class="glyphicon glyphicon-home"></i></a></li>
+                                    <li><a href="">Events</a></li>
+                                    <li>New Event</li>
+                                </ul>
+                                <h4>Create New Event</h4>
+                            </div>
+                        </div><!-- media -->
+                    </div><!-- pageheader -->
+                    
+                    <div class="contentpanel">
+						
+						<div class="row">
+							<div class="col-md-4"> <!-- Begin basic -->
+								<div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">Basic info</h4>
+                                        <p>Please fill in all basic info for this event</p>
+                                    </div><!-- panel-heading -->
+                                    
+                                    <div class="panel-body nopadding">
+          
+                                        <form class="form-horizontal form-bordered">
+                                            <div class="form-group">
+                                                <label class="col-sm-4 control-label">Name</label>
+                                                <div class="col-sm-8">
+                                                    <input type="text" placeholder="Event name" class="form-control" />
+                                                </div>
+                                            </div><!-- form-group -->
+											
+											<div class="form-group">
+                                                <label class="col-sm-4 control-label">Start Date</label>
+                                                <div class="col-sm-8">
+                                                    <input type="text" class="form-control" placeholder="dd/mm/yyyy" id="datepicker-multiple">
+                                                </div>
+                                            </div><!-- form-group -->
+											
+											<div class="form-group">
+                                                <label class="col-sm-4 control-label">Begin Time</label>
+                                                <div class="col-sm-8">
+                                                    <div class="bootstrap-timepicker"><input id="timepicker" type="text" class="form-control"/></div>
+                                                </div>
+                                            </div><!-- form-group -->
+											
+											<div class="form-group">
+                                                <label class="col-sm-4 control-label">End Date</label>
+                                                <div class="col-sm-8">
+                                                    <input type="text" class="form-control" placeholder="dd/mm/yyyy" id="datepicker-multiple">
+                                                </div>
+                                            </div><!-- form-group -->
+											
+											<div class="form-group">
+                                                <label class="col-sm-4 control-label">End Time</label>
+                                                <div class="col-sm-8">
+                                                    <div class="bootstrap-timepicker"><input id="timepicker2" type="text" class="form-control"/></div>
+                                                </div>
+                                            </div><!-- form-group -->
+											
+											<div class="form-group">
+                                                <label class="col-sm-4 control-label">Event Canceld</label>
+                                                <div class="col-sm-8 control-label">
+                                                    <div class="toggle toggle-primary"></div>
+                                                </div>
+                                            </div><!-- form-group -->
+											
+                                        </form>          
+                                    </div><!-- panel-body -->       
+                                </div><!-- panel -->
+							</div><!-- End basic -->
+							
+							<div class="col-md-4"> <!-- Begin Location -->
+								<div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">Location info</h4>
+                                        <p>Please fill in all location info for this event</p>
+                                    </div><!-- panel-heading -->
+                                    
+                                    <div class="panel-body nopadding">
+          
+                                        <form class="form-horizontal form-bordered">
+                                            <div class="form-group">
+                                                <label class="col-sm-4 control-label">Address</label>
+                                                <div class="col-sm-8">
+                                                    <input type="text" placeholder="Event Address" class="form-control" />
+                                                </div>
+                                            </div><!-- form-group -->
+											
+											<div class="form-group">
+                                                <label class="col-sm-4 control-label">City</label>
+                                                <div class="col-sm-8">
+                                                    <input type="text" placeholder="City" class="form-control" />
+                                                </div>
+                                            </div><!-- form-group -->
+											
+											<div class="form-group">
+                                                <label class="col-sm-4 control-label">Website</label>
+                                                <div class="col-sm-8">
+                                                    <div class="bootstrap-timepicker"><input id="timepicker" type="text" class="form-control"/></div>
+                                                </div>
+                                            </div><!-- form-group -->
+											
+											<div class="form-group">
+                                                <label class="col-sm-4 control-label">Registration Deadline</label>
+                                                <div class="col-sm-8">
+                                                    <input type="text" class="form-control" placeholder="dd/mm/yyyy" id="datepicker-multiple">
+                                                </div>
+                                            </div><!-- form-group -->
+											
+											<div class="form-group">
+                                                <label class="col-sm-4 control-label">Verzameltijd</label>
+                                                <div class="col-sm-8">
+                                                    <div class="bootstrap-timepicker"><input id="timepicker2" type="text" class="form-control"/></div>
+                                                </div>
+                                            </div><!-- form-group -->
+											
+											<div class="form-group">
+                                                <label class="col-sm-4 control-label">Event coordinator</label>
+                                                <div class="col-sm-8 control-label">
+                                                    <select id="select-basic" data-placeholder="Choose One" class="width100p">
+														<option value="">Choose One</option>
+														<optgroup label="GEC's">
+															<option value=""></option>
+															<option value="RF">Rick Fleuren</option>
+															<option value="DR">Daan de Ruijter</option>
+															<option value="LG">Leon de Graaff</option>
+														</optgroup>
+													</select>
+												</div>
+                                            </div><!-- form-group -->
+											
+                                        </form>              
+                                    </div><!-- panel-body -->       
+                                </div><!-- panel -->
+							</div><!-- End Location -->
+							
+							<div class="col-md-4"> <!-- Begin Details -->
+								<div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">Details</h4>
+                                        <p>Please fill in all details for this event</p>
+                                    </div><!-- panel-heading -->
+                                    
+                                    <div class="panel-body nopadding">
+					
+										<form class="form-horizontal form-bordered">
+                                            <div class="form-group">
+                                                <label class="col-sm-4 control-label">Public</label>
+                                                <div class="col-sm-8">
+                                                    <div class="toggle toggle-primary"></div>
+                                                </div>
+                                            </div><!-- form-group -->
+											
+											<div class="form-group">
+                                                <label class="col-sm-4 control-label">Guests</label>
+                                                <div class="col-sm-8">
+                                                    <div class="toggle toggle-primary"></div>
+                                                </div>
+                                            </div><!-- form-group -->
+											
+											<div class="form-group">
+                                                <label class="col-sm-4 control-label">Dressingroom</label>
+                                                <div class="col-sm-8">
+                                                    <select id="select-search-hide" data-placeholder="Choose One" class="width100p">
+														<option value="">Choose One</option>
+														<option value="unknow">Unknown</option>
+														<option value="yes">Yes</option>
+														<option value="no">No</option>
+													</select>
+                                                </div>
+                                            </div><!-- form-group -->
+											
+											<div class="form-group">
+                                                <label class="col-sm-4 control-label">Travel Restitution</label>
+                                                <div class="col-sm-8">
+                                                    <select id="select-search-hide" data-placeholder="Choose One" class="width100p">
+														<option value="">Choose One</option>
+														<option value="unknow">Unknown</option>
+														<option value="yes">Yes</option>
+														<option value="no">No</option>
+													</select>
+                                                </div>
+                                            </div><!-- form-group -->
+											
+											<div class="form-group">
+                                                <label class="col-sm-4 control-label">Parking</label>
+                                                <div class="col-sm-8">
+                                                    <select id="select-search-hide" data-placeholder="Choose One" class="width100p">
+														<option value="">Choose One</option>
+														<option value="unknow">Unknown</option>
+														<option value="yes">Yes</option>
+														<option value="no">No</option>
+													</select>
+                                                </div>
+                                            </div><!-- form-group -->
+											
+											<div class="form-group">
+                                                <label class="col-sm-4 control-label">Lunch</label>
+                                                <div class="col-sm-8">
+                                                    <select id="select-search-hide" data-placeholder="Choose One" class="width100p">
+														<option value="">Choose One</option>
+														<option value="unknow">Unknown</option>
+														<option value="yes">Yes</option>
+														<option value="no">No</option>
+													</select>
+                                                </div>
+                                            </div><!-- form-group -->
+											
+											<div class="form-group">
+                                                <label class="col-sm-4 control-label">Drinks</label>
+                                                <div class="col-sm-8">
+                                                    <select id="select-search-hide" data-placeholder="Choose One" class="width100p">
+														<option value="">Choose One</option>
+														<option value="unknow">Unknown</option>
+														<option value="yes">Yes</option>
+														<option value="no">No</option>
+													</select>
+                                                </div>
+                                            </div><!-- form-group -->									
+											
+                                        </form>  
+                                    </div><!-- panel-body -->       
+                                </div><!-- panel -->
+							</div><!-- End Details -->
+						</div> 
+                        
+                        <div class="row">
+							
+							
+							<div class="col-md-12">
+									
+									<div class="panel panel-default">
+										<div class="panel-heading">
+											<h3 class="panel-title">Visitor's information</h3>
+											<p>This information is public.</p>
+										</div>
+										<div class="panel-body">
+											<textarea id="wysiwyg" placeholder="Enter text here..." class="form-control" rows="10"></textarea>
+											
+											<div style="padding-top:10px;">
+												<button class="btn btn-primary">Save Event</button>
+											</div>
+											
+										</div>
+									</div><!-- panel -->
+									
+							</div><!-- col-sm-6 -->
+						</div><!-- row -->
+                    
+                    </div><!-- contentpanel -->
+                </div>
+            </div><!-- mainwrapper -->
+        </section>
+
+
+        <script src="js/jquery-1.11.1.min.js"></script>
+        <script src="js/jquery-migrate-1.2.1.min.js"></script>
+        <script src="js/jquery-ui-1.10.3.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/modernizr.min.js"></script>
+        <script src="js/pace.min.js"></script>
+        <script src="js/retina.min.js"></script>
+        <script src="js/jquery.cookies.js"></script>
+        
+        <script src="js/jquery.autogrow-textarea.js"></script>
+        <script src="js/jquery.mousewheel.js"></script>
+        <script src="js/jquery.tagsinput.min.js"></script>
+        <script src="js/toggles.min.js"></script>
+        <script src="js/bootstrap-timepicker.min.js"></script>
+        <script src="js/jquery.maskedinput.min.js"></script>
+        <script src="js/select2.min.js"></script>
+        <script src="js/colorpicker.js"></script>
+        <script src="js/dropzone.min.js"></script>
+
+        <script src="js/custom.js"></script>
+		<script src="js/wysihtml5-0.3.0.min.js"></script>
+		<script src="js/bootstrap-wysihtml5.js"></script>
+        <script>
+                
+              
+
+		
+            jQuery(document).ready(function() {
+				
+				// HTML5 WYSIWYG Editor
+				jQuery('#wysiwyg').wysihtml5({color: true,html:true});
+                
+                // Tags Input
+                jQuery('#tags').tagsInput({width:'auto'});
+                 
+                // Textarea Autogrow
+                jQuery('#autoResizeTA').autogrow();
+                
+                // Spinner
+                var spinner = jQuery('#spinner').spinner();
+                spinner.spinner('value', 0);
+                
+                // Form Toggles
+                jQuery('.toggle').toggles({on: true});
+                
+                // Time Picker
+                jQuery('#timepicker').timepicker({	
+				showMeridian: false,
+				minuteStep: 1
+				});
+				jQuery('#timepicker2').timepicker({	
+				showMeridian: false,
+				minuteStep: 1
+				});
+
+                
+                // Date Picker
+                jQuery('#datepicker').datepicker();
+                jQuery('#datepicker-inline').datepicker();
+                jQuery('#datepicker-multiple').datepicker({
+                    numberOfMonths: 3,
+                    showButtonPanel: true
+                });
+                
+                // Input Masks
+                jQuery("#date").mask("99/99/9999");
+                jQuery("#phone").mask("(999) 999-9999");
+                jQuery("#ssn").mask("999-99-9999");
+                
+                // Select2
+                jQuery("#select-basic, #select-multi").select2();
+                jQuery('#select-search-hide').select2({
+                    minimumResultsForSearch: -1
+                });
+                
+                function format(item) {
+                    return '<i class="fa ' + ((item.element[0].getAttribute('rel') === undefined)?"":item.element[0].getAttribute('rel') ) + ' mr10"></i>' + item.text;
+                }
+                
+                // This will empty first option in select to enable placeholder
+                jQuery('select option:first-child').text('');
+                
+                jQuery("#select-templating").select2({
+                    formatResult: format,
+                    formatSelection: format,
+                    escapeMarkup: function(m) { return m; }
+                });
+                
+                // Color Picker
+                if(jQuery('#colorpicker').length > 0) {
+                    jQuery('#colorSelector').ColorPicker({
+			onShow: function (colpkr) {
+			    jQuery(colpkr).fadeIn(500);
+                            return false;
+			},
+			onHide: function (colpkr) {
+                            jQuery(colpkr).fadeOut(500);
+                            return false;
+			},
+			onChange: function (hsb, hex, rgb) {
+			    jQuery('#colorSelector span').css('backgroundColor', '#' + hex);
+			    jQuery('#colorpicker').val('#'+hex);
+			}
+                    });
+                }
+  
+                // Color Picker Flat Mode
+                jQuery('#colorpickerholder').ColorPicker({
+                    flat: true,
+                    onChange: function (hsb, hex, rgb) {
+			jQuery('#colorpicker3').val('#'+hex);
+                    }
+                });
+                
+                
+            });
+        </script>
+		
+
+
+
+
+    </body>
+</html>
